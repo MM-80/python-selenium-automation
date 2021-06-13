@@ -8,4 +8,3 @@ Feature: Test Amazon Cart
     And Click on the first product
     And Click on add to cart button
     Then Verify cart has one item
-
