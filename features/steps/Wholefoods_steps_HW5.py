@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 
 @given('Open Amazon wholefoods deals page')
 def open_amazon_wholefoods(context):
-    context.driver = webdriver.Chrome(executable_path='/Users/mariamarques/python-selenium-automation/chromedriver')
+    context.driver = webdriver.Chrome(executable_path='/chromedriver')
     context.driver.get('https://www.amazon.com/wholefoodsdeals')
 
 
