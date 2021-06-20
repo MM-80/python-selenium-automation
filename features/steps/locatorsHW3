@@ -1,0 +1,25 @@
+"""
+Logo field, search by (class, 'i.a-icon.a-icon-logo')
+
+Create account field, search by (class, 'h1.a-spacing-small')
+
+Your name field, search by (ID, 'ap_customer_name')
+
+Email field search by (ID, 'ap_email')
+
+Password field, search by (ID, 'ap_password')
+
+Passwords must be at least 6 characters field, search by ()
+
+Re-enter password field search by (ID, 'ap_password_check')
+
+
+Create your amazon account field search by (ID,'continue.a-button-input')
+
+Conditions of use field, search by (LinkText, 'ap_register_notification_condition_of_use')
+
+Privacy notice field, search by (LinkText, 'ap_register_notification_privacy_notice')
+
+Sign in field, search by (Class,'a.a-link-emphasis')
+
+"""

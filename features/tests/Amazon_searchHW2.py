@@ -1,19 +1,18 @@
-from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-# init driver
-driver = webdriver.Chrome(executable_path='/Users/mariamarques/python-selenium-automation/chromedriver')
-driver.maximize_window()
-
-# open the url
+driver = webdriver.chrome()
 driver.get('https://www.amazon.com/gp/help/customer/display.html')
 
-search_field = driver.find_element(By.ID, 'helpsearch')
+driver.find_element(By.ID, 'helpsearch').send_keys('cancel order', keys.Enter)
 
-search_field.send_keys('cancel order')
+actual_tex = driver.find_element(By.XPATH, "//div[@class='help-content']/h1").text
+expected_text = 'Cancel Items or Orders'
 
-driver.find_element(By.CLASS_NAME, 'a-icon-search').send_keys(Keys.ENTER)
+assert expected_text == actual_tex, f'Expected {expected_text}, but got {actual_tex},'
+
+driver.quit()
+
 
 
 
