@@ -1,3 +1,4 @@
+# Q#1
 # Compute the sum of digits in all numbers from 1 to n. When a user enters
 # a number n, find the sum of digits in all numbers from 1 to n.
 
