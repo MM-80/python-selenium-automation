@@ -1,3 +1,4 @@
+# Q#2
 # Find max number from 3 values, entered manually from a keyboard.
 
 a = int(input('Enter first integer'))
