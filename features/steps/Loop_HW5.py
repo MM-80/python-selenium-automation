@@ -20,3 +20,4 @@ def verify_can_loop_thru_colors(context):
         color_webelements[i].click()
         time.sleep(2)
         actual_text = context.driver.find_element(By.CSS_SELECTOR, "#variation_color_name span.selection").text
+        print (actual_text)
